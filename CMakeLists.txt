@@ -45,6 +45,7 @@ include_directories(SYSTEM "/usr/include/irods")
 
 add_library(msiSetUpperCaseWhereQuery SHARED src/msiSetUpperCaseWhereQuery.cc)
 add_library(msiStrToUpper             SHARED src/msiStrToUpper.cc)
+add_library(msiSecureExecCmd          SHARED src/msiSecureExecCmd.cc)
 add_library(msiRegisterDataCiteDOI    SHARED src/msiRegisterDataCiteDOI.cc)
 add_library(msiGenerateRandomID       SHARED src/msiGenerateRandomID.cc)
 add_library(msiGetDataCiteDOI         SHARED src/msiGetDataCiteDOI.cc)
@@ -68,6 +69,7 @@ target_link_libraries(msi_json_objops      LINK_PUBLIC ${JANSSON_LIBRARIES} ${Bo
 install(TARGETS
         msiSetUpperCaseWhereQuery
         msiStrToUpper
+        msiSecureExecCmd
 	msiRegisterDataCiteDOI
         msiGenerateRandomID
 	msiGetDataCiteDOI
