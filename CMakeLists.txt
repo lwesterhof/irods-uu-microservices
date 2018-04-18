@@ -104,7 +104,7 @@ set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Miscellaneous microservices developed by 
 
 set(CPACK_RESOURCE_FILE_README  "${CMAKE_CURRENT_SOURCE_DIR}/README.md")
 
-set(CPACK_RPM_PACKAGE_RELEASE "1")
+set(CPACK_RPM_PACKAGE_RELEASE "2")
 set(CPACK_RPM_PACKAGE_LICENSE "LGPLv3")
 set(CPACK_RPM_PACKAGE_REQUIRES "boost-locale >= 1.51, libcurl >= 7.29.0, libxml2 >= 2.9.1, libxslt >= 1.1.28, jansson >= 2.10")
 set(CPACK_RPM_PACKAGE_CONFLICTS "rit-irods-microservices, irods-microservice-plugins-loadmeta")
